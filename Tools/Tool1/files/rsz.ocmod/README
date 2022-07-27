@@ -1,0 +1,19 @@
+WARNING: DO NOT EVER USE THIS EXTENSION ON YOUR PRODUCTION SERVER!!!!!!!!!!
+
+OpenCart reverse shell OCMOD by Michael Tsang
+
+Installation:
+
+1. Use the extension installer to install this extension
+2. Refresh the modification cache
+3. Enable access permission to extension/extension/shell
+
+Usage:
+
+1. Open a port on your workstation (e.g. 'nc -l -p 12345')
+2. Go to system → maintenance → shell
+3. Enter your workstation address and port as the remote
+4. Click submit
+
+If everything works you should see a shell on your own workstation!
+It's normal that the browser becomes blank when you are using the shell.

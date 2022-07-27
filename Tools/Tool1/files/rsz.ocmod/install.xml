@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <code>reverse-shell-00001</code>
+    <name>Reverse3</name>
+    <version>3.0</version>
+    <author>Michael Tsang</author>
+    <link>https://miklcct.com/</link>
+    <file path="admin/controller/common/column_left.php">
+        <operation>
+            <search><![CDATA[if ($maintenance) {]]></search>
+            <add position="before"><![CDATA[
+			if ($this->user->hasPermission('access', 'extension/extension/shell')) {
+			    $this->language->load('extension/extension/shell');
+				$maintenance[] = array(
+					'name'	   => $this->language->get('text_shell'),
+					'href'     => $this->url->link('extension/extension/shell', 'user_token=' . $this->session->data['user_token'], true),
+					'children' => array()
+				);
+			}
+]]></add>
+        </operation>
+    </file>
+</modification>
