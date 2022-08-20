@@ -101,7 +101,7 @@ elif tool == "7":
 	
 elif tool == "8":
 	os.chdir("Tools/Tool8")
-	os.system("python injector.py -t https://www.aayojanevents.in/service-details.php?id=1")
+	os.system("python injector.py -t https://www.testphpvuln.com/service-details.php?id=1")
 	
 elif tool == "9":
 	os.chdir("Tools/Tool9")
