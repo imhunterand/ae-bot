@@ -11,7 +11,7 @@ Module :
 [AE Bot V1  - Only work for python 2.7]
 ``` 
 Module :
--pkg install bash
+-pkg install bash 
 -pip install request
 -pip install requests
 -pip install colorama
