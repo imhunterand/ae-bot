@@ -17,6 +17,6 @@ Module :
 -pip install colorama
 -pip install bs4
 -pip install tldextract
-```
+``` 
 Thanks you~
 
